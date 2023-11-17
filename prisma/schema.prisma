@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:dev.sqlite"
+}
+
+model Session {
+  id          String    @id
+  shop        String
+  state       String
+  isOnline    Boolean   @default(false)
+  scope       String?
+  expires     DateTime?
+  accessToken String
+  userId      BigInt?
+}
+
+model QRCode {
+  id               Int      @id @default(autoincrement())
+  title            String
+  shop             String
+  productId        String
+  productHandle    String
+  productVariantId String
+  productVariantBarcode String
+  destination      String
+  scans            Int      @default(0)
+  createdAt        DateTime @default(now())
+}
+
+model Barcode {
+  id               Int      @id @default(autoincrement())
+  printSize        String
+  item1            String
+  position1        String
+  item2            String
+  position2        String
+  item3            String
+  position3        String
+  item4            String
+  position4        String
+  item5            String
+  position5        String
+  item6            String
+  position6        String
+  item7            String
+  position7        String
+  item8            String
+  position8        String
+  createdAt        DateTime @default(now())
+}

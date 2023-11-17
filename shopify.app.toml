@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "super-smash-and-print"
+client_id = "ac4fca70d217bae7650909985d5bc59e"
+application_url = "https://notebook-goals-cotton-phenomenon.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/auth/callback",
+  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/auth/shopify/callback",
+  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "alexs-fake-store.myshopify.com"
