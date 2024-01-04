@@ -59,7 +59,7 @@ export async function action({ request, params }) {
     shop,
   };
 
-  console.log("da data: ", data);
+  console.log("da data: ");
 
   if (data.action === "delete") {
     await db.qRCode.delete({ where: { id: Number(params.id) } });
@@ -78,7 +78,7 @@ export async function action({ request, params }) {
       ? await db.qRCode.create({ data })
       : await db.qRCode.update({ where: { id: Number(params.id) }, data });
 
-  console.log("da new qrCode fresh out the db: ", qrCode)
+  console.log("da new qrCode fresh out the db: ")
 
   return redirect(`/app/qrcodes/${qrCode.id}`);
 }

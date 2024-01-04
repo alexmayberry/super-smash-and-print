@@ -2,7 +2,7 @@
 
 name = "super-smash-and-print"
 client_id = "ac4fca70d217bae7650909985d5bc59e"
-application_url = "https://notebook-goals-cotton-phenomenon.trycloudflare.com"
+application_url = "https://commodity-poll-flesh-traffic.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/auth/callback",
-  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/auth/shopify/callback",
-  "https://notebook-goals-cotton-phenomenon.trycloudflare.com/api/auth/callback"
+  "https://commodity-poll-flesh-traffic.trycloudflare.com/auth/callback",
+  "https://commodity-poll-flesh-traffic.trycloudflare.com/auth/shopify/callback",
+  "https://commodity-poll-flesh-traffic.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
